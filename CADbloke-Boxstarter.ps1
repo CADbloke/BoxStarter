@@ -1,5 +1,5 @@
 ######################################################
-# To run this, use Internet Exploder and go to http://boxstarter.org/package/nr/url?https://j.mp/CADbloke-boxstarter
+# To run this, use Internet Exploder and go to http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/CADbloke/BoxStarter/master/CADbloke-Boxstarter.ps1
 ######################################################
 # moar instructions at http://boxstarter.org/Learn/WebLauncher
 

@@ -1,5 +1,5 @@
 ######################################################
-# Before you run this, run http://boxstarter.org/package/url?https://j.mp/CADbloke-boxstarter
+# Before you run this, run http://boxstarter.org/package/url?https://raw.githubusercontent.com/CADbloke/BoxStarter/master/CADbloke-Boxstarter-Dev.ps1
 ######################################################
 
 # This is http://boxstarter.org/package/url?https://j.mp/CADbloke-boxstarter-dev
