@@ -59,7 +59,7 @@ cinst git.install -Version 1.9.2  # Later versions are broken with SVN
 cinst tortoisegit
 cinst sourcetree
 cinst githubforwindows
-# Restart-Explorer   # Boxstarter-specific command - crashes Chocolatey
+
 if (Test-PendingReboot) { Invoke-Reboot }
 
 
