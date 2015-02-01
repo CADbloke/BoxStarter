@@ -67,13 +67,13 @@ if (Test-PendingReboot) { Invoke-Reboot }
 # Pin the Taskbar icons
 ######################################################
 Write-Host "Pinning Apps to the TaskBar"
-Install-ChocolateyPinnedTaskBarItem "$env:programfiles(x86)\Google\Chrome\Application\chrome.exe"
-Install-ChocolateyPinnedTaskBarItem "$env:programfiles(x86)\IrfanView\i_view32.exe"
-Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Notepad++\notepad++.exe"
-Install-ChocolateyPinnedTaskBarItem "$env:programfiles\TortoiseHg\thgw.exe"
-Install-ChocolateyPinnedTaskBarItem "$env:SystemRoot\system32\WindowsPowerShell\v1.0\powershell.exe"
-Install-ChocolateyPinnedTaskBarItem "$env:windir\explorer.exe"
-Install-ChocolateyPinnedTaskBarItem "$env:programfiles\console\console.exe"
+Install-ChocolateyPinnedTaskBarItem "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+Install-ChocolateyPinnedTaskBarItem "C:\Program Files (x86)\IrfanView\i_view32.exe"
+Install-ChocolateyPinnedTaskBarItem "C:\Program Files (x86)\Notepad++\notepad++.exe"
+Install-ChocolateyPinnedTaskBarItem "C:\Program Files\TortoiseHg\thgw.exe"
+Install-ChocolateyPinnedTaskBarItem "C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+Install-ChocolateyPinnedTaskBarItem "C:\Windows\\explorer.exe"
+Install-ChocolateyPinnedTaskBarItem "C:\Program Files\console\console.exe"
 Write-Host
 
 ######################################################
