@@ -67,11 +67,11 @@ if (Test-PendingReboot) { Invoke-Reboot }
 ######################################################
 Write-Host "Pinning Apps to the TaskBar"
 Install-ChocolateyPinnedTaskBarItem "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
-Install-ChocolateyPinnedTaskBarItem "C:\Program Files (x86)\IrfanView\i_view32.exe"
+Install-ChocolateyPinnedTaskBarItem "C:\Program Files\IrfanView\i_view32.exe"
 Install-ChocolateyPinnedTaskBarItem "C:\Program Files (x86)\Notepad++\notepad++.exe"
 Install-ChocolateyPinnedTaskBarItem "C:\Program Files\TortoiseHg\thgw.exe"
 Install-ChocolateyPinnedTaskBarItem "C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
-Install-ChocolateyPinnedTaskBarItem "C:\Windows\\explorer.exe"
+Install-ChocolateyPinnedTaskBarItem "C:\Windows\explorer.exe"
 Install-ChocolateyPinnedTaskBarItem "C:\Program Files\console\console.exe"
 Write-Host
 
