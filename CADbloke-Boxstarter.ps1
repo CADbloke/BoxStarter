@@ -20,7 +20,7 @@ Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -Ena
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
-disable-computerrestore -drive "C:\"  # http://ss64.com/ps/disable-computerrestore.html
+disable-computerrestore -drive "C:\"  # http://ss64.com/ps/disable-computerrestore.html  ** Goes >BANG< on Server 2012 but not fatal.
 if (Test-PendingReboot) { Invoke-Reboot }
 
 ######################################################
@@ -30,7 +30,7 @@ Write-Host "Installing applications from Chocolatey"
 cinst DotNet3.5 # not installed by default on Windows Server 2012
 if (Test-PendingReboot) { Invoke-Reboot }
 
-cinst sourcecodepro
+cinst sourcecodepro  # broken: https://chocolatey.org/packages/SourceCodePro#comment-1754540784
 cinst notepadplusplus.install
 cinst GoogleChrome
 cinst 7zip.install
@@ -46,7 +46,7 @@ cinst clipx  # Clipboard history manager
 cinst beyondcompare -Version 3.3.12.18414
 cinst ccleaner
 cinst malwarebytes
-cinst flashplayeractivex
+# cinst flashplayeractivex meh
 cinst virtualclonedrive
 cinst console-devel   # a better CMD
 cinst grepwin
@@ -59,7 +59,7 @@ cinst git.install -Version 1.9.2  # Later versions are broken with SVN
 cinst tortoisegit
 cinst sourcetree
 cinst githubforwindows
-Restart-Explorer   # Boxstarter-specific command
+# Restart-Explorer   # Boxstarter-specific command - crashes Chocolatey
 if (Test-PendingReboot) { Invoke-Reboot }
 
 
