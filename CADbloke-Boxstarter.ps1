@@ -43,7 +43,7 @@ cinst foxitreader
 cinst vlc
 cinst windirstat
 cinst clipx  # Clipboard history manager
-cinst beyondcompare -Version 3.3.12.18414
+cinst beyondcompare
 cinst ccleaner
 cinst malwarebytes
 # cinst flashplayeractivex meh
