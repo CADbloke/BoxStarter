@@ -10,7 +10,6 @@ $Boxstarter.AutoLogin=$true # Save my password securely and auto-login after a r
 
 # Boxstarter (not Chocolatey) commands
 Update-ExecutionPolicy Unrestricted
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
 # Enable-RemoteDesktop  # already enabled on Azure VMs and no thanks for my laptop.
 Disable-InternetExplorerESC  #Turns off IE Enhanced Security Configuration that is on by default on Server OS versions
 Disable-UAC  # at least until this is over
