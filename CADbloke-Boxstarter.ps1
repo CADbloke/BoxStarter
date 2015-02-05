@@ -47,6 +47,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 disable-computerrestore -drive "C:\"  # http://ss64.com/ps/disable-computerrestore.html  ** Goes >BANG< on Server 2012 but not fatal.
 if (Test-PendingReboot) { Invoke-Reboot }
 
+try {
 ######################################################
 # General Apps
 ######################################################
@@ -124,6 +125,11 @@ Install-ChocolateyFileAssociation ".log" "$env:programfiles\Notepad++\notepad++.
 Install-ChocolateyFileAssociation ".md" "$env:programfiles\MarkdownPad 2\MarkdownPad2.exe"
 Write-Host
 Write-Host "Finished."
+
+}
+catch {
+  throw $_
+}
 
 Exit
 #

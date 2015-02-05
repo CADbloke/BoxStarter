@@ -4,6 +4,8 @@
 
 # This is http://boxstarter.org/package/url?https://j.mp/CADbloke-boxstarter-dev
 
+try {
+
 cinst lessmsi  # MSI explorer
 cinst fiddler4
 cinst wireshark
@@ -59,7 +61,10 @@ Install-ChocolateyPinnedTaskBarItem "$env:programfiles(x86)\Microsoft Visual Stu
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles(x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"
 Write-Host
 
-
+}
+catch {
+  throw $_
+}
 
 ######################################################
 # Windows Updates
