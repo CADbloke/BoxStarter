@@ -55,7 +55,7 @@ Write-Host "Installing applications from Chocolatey"
 cinst DotNet3.5 # not installed by default on Windows Server 2012
 if (Test-PendingReboot) { Invoke-Reboot }
 
-cinst sourcecodepro  # broken: https://chocolatey.org/packages/SourceCodePro#comment-1754540784
+cinst sourcecodepro  # broken: https://chocolatey.org/packages/SourceCodePro#comment-1754540784. see https://github.com/Iristyle/ChocolateyPackages/pull/46 for my fix
 cinst notepadplusplus.install
 cinst GoogleChrome
 cinst 7zip.install
@@ -71,10 +71,10 @@ cinst clipx  # Clipboard history manager
 cinst beyondcompare
 cinst ccleaner
 cinst malwarebytes
-# cinst flashplayeractivex meh
+# cinst flashplayeractivex meh - it's a Windows 8 thing or something meh
 cinst virtualclonedrive
 cinst console-devel   # a better CMD
-cinst grepwin
+cinst grepwin         # Regex Buddy has a Grepper too
 
 ######################################################
 # Git & Hg
