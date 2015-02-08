@@ -39,6 +39,7 @@ Update-ExecutionPolicy Unrestricted
 Disable-InternetExplorerESC  #Turns off IE Enhanced Security Configuration that is on by default on Server OS versions
 Disable-UAC  # at least until this is over
 
+
 Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowFullPathInTitleBar -EnableShowHiddenFilesFoldersDrives 
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirst
 
@@ -52,38 +53,38 @@ try {
 # General Apps
 ######################################################
 Write-Host "Installing applications from Chocolatey"
-cinst DotNet3.5 # not installed by default on Windows Server 2012
+choco install DotNet3.5 # not installed by default on Windows Server 2012
 if (Test-PendingReboot) { Invoke-Reboot }
 
-cinst sourcecodepro  # broken: https://chocolatey.org/packages/SourceCodePro#comment-1754540784
-cinst notepadplusplus.install
-cinst GoogleChrome
-cinst 7zip.install
-cinst lastpass
-cinst sysinternals
-cinst paint.net
-cinst dropbox
-cinst irfanview
-cinst foxitreader
-cinst vlc
-cinst windirstat
-cinst clipx  # Clipboard history manager
-cinst beyondcompare
-cinst ccleaner
-cinst malwarebytes
-# cinst flashplayeractivex meh
-cinst virtualclonedrive
-cinst console-devel   # a better CMD
-cinst grepwin
+choco install sourcecodepro  # broken: https://chocolatey.org/packages/SourceCodePro#comment-1754540784
+choco install notepadplusplus.install
+choco install GoogleChrome
+choco install 7zip.install
+choco install lastpass
+choco install sysinternals
+choco install paint.net
+choco install dropbox
+choco install irfanview
+choco install foxitreader
+choco install vlc
+choco install windirstat
+choco install clipx  # Clipboard history manager
+choco install beyondcompare
+choco install ccleaner
+choco install malwarebytes
+# choco install flashplayeractivex meh
+choco install virtualclonedrive
+choco install console-devel   # a better CMD
+choco install grepwin
 
 ######################################################
 # Git & Hg
 ######################################################
-cinst tortoisehg
-cinst git.install -Version 1.9.2  # Later versions are broken with SVN
-cinst tortoisegit
-cinst sourcetree
-cinst githubforwindows
+choco install tortoisehg
+choco install git.install -Version 1.9.2  # Later versions are broken with SVN
+choco install tortoisegit
+choco install sourcetree
+choco install githubforwindows
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
