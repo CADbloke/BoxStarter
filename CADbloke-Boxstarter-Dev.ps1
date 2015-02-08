@@ -1,8 +1,9 @@
 ######################################################
-# Before you run this, run http://boxstarter.org/package/url?https://raw.githubusercontent.com/CADbloke/BoxStarter/master/CADbloke-Boxstarter-Dev.ps1
+# Before you run this, run http://boxstarter.org/package/url?https://raw.githubusercontent.com/CADbloke/BoxStarter/master/CADbloke-Boxstarter.ps1
 ######################################################
 
-# This is http://boxstarter.org/package/url?https://j.mp/CADbloke-boxstarter-dev
+# This is http://boxstarter.org/package/url?https://raw.githubusercontent.com/CADbloke/BoxStarter/master/CADbloke-Boxstarter-Dev.ps1
+# but just run it locally in PowerShell because Chocolatey should already be installed by the previous BoxStarter script
 
 try {
 
