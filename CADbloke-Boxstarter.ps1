@@ -49,6 +49,9 @@ disable-computerrestore -drive "C:\"  # http://ss64.com/ps/disable-computerresto
 if (Test-PendingReboot) { Invoke-Reboot }
 
 try {
+# https://github.com/chocolatey/choco/issues/52
+choco feature enable allowInsecureConfirmation
+
 ######################################################
 # General Apps
 ######################################################
@@ -87,6 +90,9 @@ choco install sourcetree
 choco install githubforwindows
 
 if (Test-PendingReboot) { Invoke-Reboot }
+
+# https://github.com/chocolatey/choco/issues/86#issuecomment-73439336
+choco upgrade all -y
 
 
 ######################################################
